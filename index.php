@@ -1,4 +1,4 @@
-<!--- ESTE PRIMER BLOQUE CREO QUE ES PARA EL INICIO DE SESION, ASEGURARME --->
+<!----------------------------- SESSION -------------------------------->
 
 <?php
   session_start();
@@ -19,9 +19,7 @@
   }
 ?>
 
-
-<!--- ESTE PRIMER BLOQUE CREO QUE ES PARA EL INICIO DE SESION, ASEGURARME --->
-
+<!----------------------------------------------------------------------->
 
 
 
@@ -32,7 +30,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-    <!--- ESTO HACE QUE SE EJECUTEN LOS FILTROS DE JS. IGUAL SOLO IMPORTA JS --->
+    <!--- Filtro JavaScript  --->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
 	<script src="main.js"></script>
 
@@ -45,18 +43,12 @@
         include_once('header.php');
     ?>
 
-          
-<!-- MENU INFERIOR -->    
-    
-    <?php
-        include_once('menu.php');
-    ?>
 
+    <div class="clearfix"></div> 
 
 
 <!-- SIDEBAR -->
-
-<section class="container">
+    <section class="container">
         <div class="sidebar"> 
             <img src="images/CATEGORY.png" width="250" height="50" alt="Logo">
             <ul class="tabs">   <!--- Para que me funcionen las tabs no puedo borrar esta clase --->
@@ -167,5 +159,5 @@
             include_once('footer.php');
         ?>
 
-  </body>
+    </body>
 </html>

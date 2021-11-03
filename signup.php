@@ -37,14 +37,8 @@
         include_once('header.php');
     ?>
 
-          
-<!-- MENU INFERIOR -->    
-    
-    <?php
-        include_once('menu.php');
-    ?>
 
-    <div class="clearfix"></div>
+<div class="clearfix"></div>
 
 
 <!--- SIGN UP --->  

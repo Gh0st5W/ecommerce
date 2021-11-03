@@ -23,7 +23,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/private.css">
-    <title>Private Menu</title>
+    <title>Shopping Cart</title>
   </head>
   <body>
 
@@ -41,7 +41,7 @@
       <br><br/>
           <form>
                 <div class="container">
-                    <div class="brand-title">PRIVATE MENU</div>
+                    <div class="brand-title">SHOPPING CART</div>
 
                         <br><br/>
                         <label>USER NAME</label><br><br/>
@@ -71,3 +71,14 @@
   </body>
 </html>
 
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -38,8 +38,7 @@
           <head>
             <meta charset="utf-8">
             <title>Login</title>
-            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-            <link rel="stylesheet" type="text/css" href="css/login.css">
+            <link rel="stylesheet" type="text/css" href="css/login.css">       
           </head>
   <body>
 
@@ -49,13 +48,6 @@
 
     <?php
         include_once('header.php');
-    ?>
-
-          
-<!-- MENU INFERIOR -->    
-    
-    <?php
-        include_once('menu.php');
     ?>
 
     <div class="clearfix"></div>
@@ -73,8 +65,8 @@
                         <input name="email" type="text" placeholder="Enter your email">
                         <label>PASSWORD</label>
                         <input name="password" type="password" placeholder="Enter your Password">
-                        <input type="submit" value="Submit">
-              </div>
+                        <input type="submit" value="Submit"></div>
+                </div>
           </form>
     </section>
 
