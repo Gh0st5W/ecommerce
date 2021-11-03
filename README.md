@@ -1,4 +1,14 @@
-# ecommerce v 0.1
+
+# ecommerce website v 0.2
+
+Improvements over last version.
+
+- New CSS structure.
+- Some bugs fixed.
+- Layout improvements.
+
+
+# ecommerce website v 0.1
 
 This is a basic ecommerce website.
 
