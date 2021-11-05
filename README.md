@@ -18,7 +18,7 @@ This is a basic ecommerce website.
   - LogIn
   - Contact
   - Member Area
-  - Contact
+  - About us
 - Register and login users.
 - Filter by product categories
 - Adding products to cart (under development)
