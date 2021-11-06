@@ -1,4 +1,11 @@
 
+# ecommerce website v 0.3
+
+Improvements over last version.
+
+- Some bugs fixed.
+- Shopping Cart functionality added.
+
 # ecommerce website v 0.2
 
 Improvements over last version.
