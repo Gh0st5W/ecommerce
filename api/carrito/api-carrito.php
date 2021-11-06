@@ -2,6 +2,8 @@
 
 <?php
 
+/* Mapeo de las funciones de carrito.php en la interfaz */
+
 include_once 'carrito.php';
 
 if(isset($_GET['action'])){
@@ -29,21 +31,29 @@ if(isset($_GET['action'])){
 }
 
 function mostrar($carrito){
+    /* Cargamos nuestro carrito en estado incial */
     $productsCarrito = json_decode($carrito->load(), 1);
     $fullproducts = [];
-    $total = 0;
-    $totalproducts = 0;
+    $total = 0; /* Importe */
+    $totalproducts = 0; /* Productos totales */
+
+
     foreach($productsCarrito as $productCarrito){
         $httpRequest = file_get_contents('http://localhost/website/api/productos/api-productos.php?get-product=' . $productCarrito['id']); 
-        $productProducto = json_decode($httpRequest, 1)['product'];
+        /* Mapeamos */
+        /* Primero lo decodificamos y le asigno el objeto Product*/
+        $productProducto = json_decode($httpRequest, 1)['products'];
         $productProducto['cantidad'] = $productCarrito['cantidad'];
-        $productProducto['subtotal'] = $productProducto['cantidad'] * $productProducto['precio'];
+        $productProducto['subtotal'] = $productProducto['cantidad'] * $productProducto['price'];
         $total += $productProducto['subtotal'];
         $totalproducts += $productProducto['cantidad'];
+        /* Lo añadimo al array */
         array_push($fullproducts, $productProducto);
     }
+
+
     $resArray = array('info' => ['count' => $totalproducts, 'total' => $total] ,'products' => $fullproducts);
-    //array_push($fullproducts, ['count' => $totalproducts, 'total' => $total]);
+    /* Lo imprimimos */
     echo json_encode($resArray);
 }
 
@@ -66,6 +76,7 @@ function remove($carrito){
         }
     }else{
         // error
+
     }
 }
 

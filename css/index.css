@@ -1,84 +1,7 @@
 *{
-  margin: 0px;
-  padding: 0px;
-}
-
-/******************* HEADER ********************/
-
-
-.headerUpper {
-	background: #333;
-	color: rgba(248, 244, 0, 0.781);
-	height: 30px; 
-  width: 100%;
-  margin: 0px;
-  text-align: center;
-  line-height: 20px;
-  border-radius: 1px solid black;
-}	
-
-/************* HEADER MEDIUM + LOGO ************/
-
-.grid-container {   /* ESTO AFECTA A AMBOS */  
-  display: grid;
-  height: 100px;
-  width: 100%;
-  grid-template-areas:
-    'logo login login login login login';
-  grid-gap: 1px;
-  padding: 0px;
-  
-}
-
-.grid-container > div { /* Esto afecta a logo y al login */
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-  padding: 0px 0;
-}
-
-.leftside { 
-  grid-area: logo;
-  float: left; 
-}
-
-.rightside { 
-  grid-area: login;
-  font-size: 10px; 
-  color: white;
-}
-
-/********** MENU INFERIOR **********/
-
-nav{
-  background-color: black;
-  height: 50px;
-}
-
-nav ul li{
-  float: right;  /* Esto sirve para colocar elementos uno al lado del otro */
-  list-style: none;
-  width: 120px;
-  margin: 10px; /* Espacio entre los elementos */
-  font: white;
-  font-size: 17px;
-  font-family: sans-serif;
-  font-style: bold;
-}
-
-.nav ul li:hover {
-  background: #4e4e4e;
-  cursor: pointer;
-}
-
-nav ul li a{
-  text-decoration: none;
-  color: white;
-  font-size: 17px;
-  font-family: sans-serif;
-  opacity: 0.7;
-  padding: 10px;
-}
-
+	margin: 0px;
+	padding: 0px;
+  }
 
 /* Con esto consigo que los elementos de debajo del menui se queden por debajo */
 .clearfix{
@@ -95,7 +18,7 @@ nav ul li a{
   /* position: fixed; */ /* Con esto ocupa toda la página y no me aparece el footer */
 }
 
-.sidebar {       /* Solo las caracteristicas del sidebar */
+.sidebar {      
   width: 15%;
   height: 700px;
   background-color: black;
@@ -122,10 +45,10 @@ nav ul li a{
 /******************* CUERPO *****************/
 
 #content{
-  float:right;
+  float:left;
   width: 85%;
   background-color: rgb(255, 255, 255);
-  background: url("../images/background.jpg");
+  background: url("../images/backgroundIndex.png");
   min-height: 700px;
   overflow-y: auto; /* Con esto podemos hacer scroll en el content (no en el sidebar) */
   position: static;
@@ -165,21 +88,3 @@ nav ul li a{
   }
 
  
-/******************* FOOTER *****************/
-
-#main-footer {
-	background: #333;
-	color: white;
-	text-align: center;
-	padding: 20px;
-	margin-top: 0px;
-}
-	#main-footer p {
-		margin: 0;
-	}
-	
-	#main-footer a {
-		color: white;
-	}
-
-  

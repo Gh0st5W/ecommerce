@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /******************* HEADER UPPER ********************/
+  
+  
+  .headerUpper {
+      background: #333;
+      color: rgba(248, 0, 0, 0.993);
+      height: 30px; 
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 20px;
+    border-radius: 1px solid black;
+  }	
+
+
+
+
+/************* HEADER MEDIUM + LOGO ************/
+
+  .grid-container {  
+    display: grid;
+    height: 120px;
+    width: 100%;
+    grid-template-areas:
+      'logo login login login login login';
+    grid-gap: 1px;
+    padding: 0px;
+    
+  }
+  
+  .grid-container > div {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 0px 0;
+  }
+  
+  .leftside { 
+    grid-area: logo;
+    float: left; 
+  }
+  
+  .rightside { 
+    grid-area: login;
+    font-size: 10px; 
+    color: white;
+  }
+  
+  /********** MENU INFERIOR **********/
+  
+  nav{
+    background-color: black;
+    height: 50px;
+  }
+  
+  nav ul li{
+    float: right;  /* Esto sirve para colocar elementos uno al lado del otro */
+    list-style: none;
+    width: 120px;
+    margin: 10px;
+    font: white;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-style: bold;
+  
+  }
+  
+  .nav ul li:hover {
+    background: #4e4e4e;
+    cursor: pointer;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+    opacity: 0.7;
+    padding: 10px;
+  }
+  
+  
+  /* Con esto consigo que los elementos de debajo del menui se queden por debajo */
+  .clearfix{
+    clear: both;
+  }
+  
+  
+ /******** CSS DEL CARRITO *********/
+
+ .carrito{
+  float: right;
+}
+
+.carrito-active{
+  background: white;
+}
+.carrito-active a{
+  color: black;
+}
+
+#carrito-container{
+    width: 400px;
+    background: white;
+    border: solid 1px #000;
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    margin-top: 10px;
+    display: none;
+}
+
+#tabla .fila{
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+#tabla .fila .imagen{
+  display: inline-block;
+  width: 100px;
+}
+#tabla .fila .info{
+  box-sizing: border-box;
+  font-size: 14px;
+  display: inline-block;
+  padding-left: 20px;
+  vertical-align: top;
+  width: 273px;
+}
+
+#tabla .fila .info .nombre{
+  font-size: 20px;
+  font-weight: bold;
+}
+#tabla .fila .info .botones{
+  padding: 20px 0 0 0;
+}
+
+#tabla p{
+  font-size: 24px !important;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+  /******************* FOOTER *****************/
+
+#main-footer {
+	background: #333;
+	color: white;
+	text-align: center;
+	padding: 20px;
+	margin-top: 0px;
+}
+	#main-footer p {
+		margin: 0;
+	}
+	
+	#main-footer a {
+		color: white;
+	}
+
+  

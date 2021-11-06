@@ -16,8 +16,9 @@ if(isset($_GET['categoria'])){
         echo json_encode(['statuscode' => 200, 
                         'products' => $products]);
     }
-}else if(isset($_GET['get-products'])){
-$id = $_GET['get-products'];
+/* Necesito implementar este else if para el carrito */
+}else if(isset($_GET['get-product'])){
+$id = $_GET['get-product'];
 
 if($id == ''){
     echo json_encode(['statuscode' => 400, 
@@ -25,6 +26,7 @@ if($id == ''){
 }else{
     $productos = new Productos();
     $products = $productos->get($id);
+    /* Mandamos todo el objeto con formato json */
     echo json_encode(['statuscode' => 200, 
                     'products' => $products]);
 }

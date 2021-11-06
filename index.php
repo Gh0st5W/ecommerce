@@ -31,8 +31,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
     <!--- Filtro JavaScript  --->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
-	<script src="main.js"></script>
+
 
 </head>
     <body>
@@ -160,4 +159,9 @@
         ?>
 
     </body>
+
+<!--- Pongo aqui el script para que se ejecute tras cargar la pagina ya que sino las funciones del carrito me devuelven NULL --->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+	<script src="main.js"></script>
+
 </html>
