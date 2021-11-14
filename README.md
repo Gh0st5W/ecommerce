@@ -1,3 +1,8 @@
+# ecommerce website v 0.4
+
+- Code cleanning
+- Some bugs fixed.
+- Shopping Cart page added.
 
 # ecommerce website v 0.3
 
