@@ -1,4 +1,4 @@
-/* Mostramos el contenido serún la seleccion de la categoria */
+/* Mostramos el contenido según la seleccion de la categoria */
 $(document).ready(function(){
     $('ul.tabs li a:first').addClass('active');
     $('.categorias article').hide();
@@ -66,6 +66,12 @@ bCarrito.addEventListener('click', (e) =>{
 });
 
 
+function runcode(){
+    document.getElementById("container").innerHTML = "Hello World";
+}
+
+
+
 /* Actualización de carrito */
 function actualizarCarritoUI(){
     /* Cargamos el json de la solicitud */
@@ -85,16 +91,18 @@ function actualizarCarritoUI(){
                     <div class='info'>
                         <input type='hidden' value='${element.id}' />
                         <div class='nombre'>${element.description}</div>
-                        <div>${element.cantidad} items de $${element.price}</div>
-                        <div>Subtotal: $${element.subtotal}</div>
-                        <div class='botones'><button class='btn-remove'>Quitar 1 del carrito</button></div>
+                        <div>${element.cantidad} unit EUR ${element.price}</div>
+                        <div>Subtotal: EUR ${element.subtotal}</div>
+                        <div class='botones'><button class='btn-remove'>Eliminar</button></div>
                     </div>
                 </div>
+                <div><button class='link' href="index.php" target="_blank">IR AL CARRITO</button></div>
             `;
+
         });
 
         
-        precioTotal = `<p>Total: $${data.info.total}</p>`;
+        precioTotal = `<p>Total: EUR ${data.info.total}</p>`;
         tablaCont.innerHTML = precioTotal + html;
         document.cookie = `items=${data.info.count}`;
         document.querySelector('.btn-carrito').innerHTML = `(${data.info.count}) Carrito`;
@@ -105,6 +113,15 @@ function actualizarCarritoUI(){
                 removeProductFromCarrito(id);
             })
         });
+
+        /*** BOTON DE ACCESO AL CARRITO CART.PHP**/    
+        document.querySelectorAll('.link').forEach(boton =>{
+            boton.addEventListener('click', () => {
+                const id = boton.parentElement.parentElement.children[0].value;
+                removeProductFromCarrito(id);
+            })
+        });
+        /******************************************/
     });
 }
 
@@ -144,4 +161,17 @@ const removeProductFromCarrito = id =>{
         actualizarCarritoUI();
     });
 
+    
 };
+
+/******* ACCESO A PAGINA DE PRODUCTO MEDIANTE CLICK EN IMAGEN *************/
+
+const images = document.querySelectorAll('image');
+
+images.forEach(images => {
+    const id = images.parentElement.parentElement.children[0].value;
+
+    images.addEventListener('click', e =>{
+        addProductToCarrito(id);
+    });
+});

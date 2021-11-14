@@ -1,6 +1,8 @@
 <?php
 
-  require 'database.php';
+  /* Importamos los datos de conexión */
+  require './lib/db.php';
+  require './lib/database.php';
 
   $message = '';
 
@@ -48,16 +50,19 @@
       <p> <?= $message ?></p>
     <?php endif; ?>
 
-    <h1>SignUp</h1>
-    <span>or <a href="login.php">Login</a></span>
+    <section id="content">
+        <div class="container">
+            <h1>SignUp</h1>
+            <span>or <a href="login.php">Login</a></span>
 
-    <form action="signup.php" method="POST">
-      <input name="email" type="text" placeholder="Enter your email">
-      <input name="password" type="password" placeholder="Enter your Password">
-      <input name="confirm_password" type="password" placeholder="Confirm Password">
-      <input type="submit" value="Submit">
-    </form>
-
+            <form action="signup.php" method="POST">
+              <input name="email" type="text" placeholder="Enter your email">
+              <input name="password" type="password" placeholder="Enter your Password">
+              <input name="confirm_password" type="password" placeholder="Confirm Password">
+              <input type="submit" value="Submit">
+            </form>
+        </div>   
+    </section>
 
 
 

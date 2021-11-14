@@ -3,7 +3,9 @@
 <?php
   session_start();
 
-  require './database.php';
+  /* Importamos los datos de conexión */
+  require './lib/db.php';
+  require './lib/database.php';
 
   if (isset($_SESSION['user_id'])) {
     $records = $conn->prepare('SELECT id, email, password FROM users WHERE id = :id');

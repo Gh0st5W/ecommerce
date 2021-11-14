@@ -6,12 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/header_footer.css">
-
-  <!--- Si no comento esto, en la consola del navegador me devuelve un error con bCarrito--->
-    <!--- Pero sino lo pongo, posiblemente no funcione el login --->
-  <!--- JavaScript para gestionar el evento del carrito  --->
-	<!--- <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>  ---> 
-	<!--- <script src="main.js"></script>  --->
+  <title>Header</title>
 
 </head>
     <body>  
@@ -33,7 +28,7 @@
 
           <div class="rightside"> 
             <!-- LOGIN or SIGNUP -->
-              <?php require 'partials/header.php' ?>
+              
                 <?php if(!empty($user)): ?>
                     <br> Welcome. <?= $user['email']; ?>
                     <br>You are Successfully Logged In                  
@@ -61,27 +56,19 @@
             <li><a href="private.php">PRIVATE</a></li>
             
             <li class="carrito">
-                <a href="#" class='btn-carrito'>Carrito</a>
+                <a href="#" class='btn-carrito'>CART</a>
                 <div id="carrito-container">
                     <div id="tabla">
-            
-            <!-- <li class="carrito">
-              <a href="#" class='btn-carrito'>CART</a>
-                  <div id="carrito-container">
-                      <div id="tabla">
-                      </div> -->
                       
-                      
-
                   </div> 
+                  
             </li>
+            <li> <a href="cart.php" ><img src="images/minicart.png" alt="Product01" width="20px" height="20px" /></li>
             <li><a href="login.php">LOGIN</a></li>
             <li><a href="index.php">INICIO</a></li>            
         </ul>
     </nav>
 
-
-     
 
   </body>
 </html>
