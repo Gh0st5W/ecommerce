@@ -1,4 +1,3 @@
-  
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,15 +54,15 @@
             <li><a href="contact.php">CONTACT</a></li>
             <li><a href="private.php">PRIVATE</a></li>
             
+            <!--- Esta será la tabla que desplegará el resumen del carrito --->
             <li class="carrito">
                 <a href="#" class='btn-carrito'>CART</a>
                 <div id="carrito-container">
                     <div id="tabla">
-                      
                   </div> 
                   
             </li>
-            <li> <a href="cart.php" ><img src="images/minicart.png" alt="Product01" width="20px" height="20px" /></li>
+            <li> <a href="cart.php" ><img src="images/minicart.png" alt="Product01" width="20px" height="20px"  /></li>
             <li><a href="login.php">LOGIN</a></li>
             <li><a href="index.php">INICIO</a></li>            
         </ul>

@@ -1,3 +1,6 @@
+
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -19,23 +22,28 @@
 
 <!-- CONTACT FORM -->
 
-    <div class="container">
-        <div class="content">
-          <div class="brand-logo"></div>
-          <div class="brand-title">CONTACT</div>
-          <div class="inputs">
-            <label>TOPIC</label>
-            <input type="email" placeholder="address@example.com" />
-            <label>CONTENT</label>
-            <input type="password" placeholder="Type you password here" />
-            <button type="submit">SEND</button>
+    <div class="row">
+      <div class="container">
+              <div class="brand-title">CONTACT US</div>
+                <div id="templatemo_contact" class="col-md-4 gallery-contact">
+              </div>
+                <div class="col-md-8 templatemo_contactform">
+
+      <form action="sendmail.php" method="post">
+              <input type="text" name="name" id="name" class="name" placeholder="NAME">
+              <input type="text" name="mail" id="mail" class="email" placeholder="YOUR EMAIL">
+              <input type="text" name="phone" id="subject" class="subject" placeholder="PHONE">
+              <input type="text" class="message" placeholder="WRITE YOUR MESSAGE ... " id="message"></textarea>
+              <div class="clear"></div>
+              
+              <div class="input">
+                <button type="submit" class="submit">SEND! </button></div>  
+          </div>    
         </div>
-      </div>  
-    </div>
+      </form>
+    </div>  
 
     <div class="clearfix"></div>
-
-
 
 <!-- FOOTER -->
         <?php

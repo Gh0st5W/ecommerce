@@ -4,12 +4,13 @@
   session_start();
 
   if (isset($_SESSION['user_id'])) {
-    header('Location: /php-login');
+    // header('Location: /php-login'); 
+    header('Location: login.php'); 
   }
 
   /* Establecemos conexion con la DB */
   require './lib/database.php';
-  //require './lib/db.php';
+
 
   if (!empty($_POST['email']) && !empty($_POST['password'])) {
     $records = $conn->prepare('SELECT id, email, password FROM users WHERE email = :email');
