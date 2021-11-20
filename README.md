@@ -1,6 +1,8 @@
 # ecommerce website v 0.5
 
 - Private customer area.
+- Contact form.
+- About us.
 - Purchasing process and order recording.
 
 # ecommerce website v 0.4
