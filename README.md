@@ -1,3 +1,8 @@
+# ecommerce website v 0.5
+
+- Private customer area.
+- Purchasing process and order recording.
+
 # ecommerce website v 0.4
 
 - Code cleanning
@@ -19,7 +24,6 @@ Improvements over last version.
 - New CSS structure.
 - Some bugs fixed.
 - Layout improvements.
-
 
 # ecommerce website v 0.1
 
